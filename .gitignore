@@ -47,4 +47,4 @@ testem.log
 Thumbs.db
 
 .firebaserc
-./src/assets/config.json
+/src/assets/config.json
