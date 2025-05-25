@@ -1,0 +1,12 @@
+h4 {
+    background-color:MediumSeaGreen;
+}
+
+hr {
+    /* color:Tomato; */
+    width: 100%;            /* Full width of the container */
+    height: 8px;            /* Increase thickness */
+    background-color: #007bff; /* Change to a specific color */
+    border-radius: 4px;     /* Optional: round the edges */
+    margin: 30px 0;         /* Increase the margin for spacing */
+}

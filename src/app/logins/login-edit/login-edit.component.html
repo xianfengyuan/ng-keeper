@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!loginForm.valid">Save</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              formControlName="username"
+              class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              id="password"
+              formControlName="password"
+              class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea
+              type="text"
+              id="comments"
+              class="form-control"
+              formControlName="comments"
+              rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div formGroupName="established" class="form-group">
+            <label for="established">Established</label>
+            <input
+              type="datetime-local"
+              id="established"
+              formControlName="established"
+              class="form-control">
+          </div>
+          <div>
+            Selected Date & Time:: {{ established | date:'long' }}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

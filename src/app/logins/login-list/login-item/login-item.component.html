@@ -1,0 +1,13 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="['/logins', index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ login.username }} | {{ index }}</h4>
+    <p class="list-group-item-text">{{ login.password }}</p>
+    <p class="list-group-item-text">{{ login.comments }}</p>
+    <p class="list-group-item-text">{{ login.established }}</p>
+  </div>
+</a>
+<hr>

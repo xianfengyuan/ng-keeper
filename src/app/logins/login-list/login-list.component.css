@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: flex-start; /* Aligns child elements to the right */
+    padding: 10px;
+}
+.search-box {
+    width: 300px;
+    height: 100px;
+}
