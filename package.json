@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^19.2.13",
     "@angular/platform-browser-dynamic": "^19.2.13",
     "@angular/router": "^19.2.13",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "core-js": "^3.1.2",
     "glob": "^11.0.2",
