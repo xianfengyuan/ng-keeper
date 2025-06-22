@@ -112,6 +112,10 @@ export class AuthService {
         }, expirationDuration);
     }
 
+    get uid(): string | null {
+        return this.user.value ? this.user.value.is : null;
+    }
+
     private handleAuth(email: string, userId: string, token: string, expiresIn: number) {
         const expirationDate = new Date(
             new Date().getTime() + expiresIn * 1000
